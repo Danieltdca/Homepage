@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+  <!-- Short introduction of myself -->
+    <div class="bio">
+      <h2 class="my_profile">Meet <span>Daniel</span>: From Customer Service to <span>Coding</sapn></h2>
+      <p class="intro">
+          Hey, I’m Daniel. I’m trilingual, with Portuguese as my native language and Spanish and English as my second languages, all learned by myself. 
+          Currently, I'm diving into programming since February 2024 through CS50x from Harvard. Transitioning from customer service to the tech industry, 
+          I understand the importance of efficiency and problem-solving. With experience managing operations, I aim to leverage my background to develop 
+          innovative solutions..
+      </p>
+      <p class="intro">
+          I'm honing my skills in C, Python, JavaScript, HTML, CSS and SQL, and I'm also exploring frameworks like Django and Flask. Excited about the journey ahead, 
+          I look forward to connecting with like-minded individuals and contributing to impactful projects!
+      </p>
+    </div>
+    <section class="projects">
+            <h2>My Projects</h2>
+        <div class="project-list">
+                <div class="project">
+                    <img src="{{ url_for('static', filename='images/art.png') }}" alt="Project 1 Image">
+                    <h3 class="project-header">Simple registration form</h3>
+                    <p class="project-p">This code sets up a simple web application using Flask, with user authentication (login, register, logout) and session management.</p>
+                    <a href="https://github.com/Danieltdca/simple-registration-form" target="_blank" class="btn btn-primary">View Project</a>
+                </div>
+            
+                <div class="project">
+                    <img src="{{ url_for('static', filename='images/birthdays.png') }}" alt="Project 2 Image">
+                    <h3 class="project-header">Birthdays</h3>
+                    <p class="project-p">This project is a simple web application that tracks people's birthdays. Users can add names and birthdays (month and day), and the entries will be stored in a database.</p>
+                    <a href="lhttps://github.com/Danieltdca/birthdays" target="_blank" class="btn btn-primary">Birthdays</a>
+                </div>
+        
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+{% endblock main %}
+  
